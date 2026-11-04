@@ -1,0 +1,21 @@
+name: LandsEdit
+version: ${project.version}
+main: ru.raskol.lands.LandsEdit
+api-version: '1.21'
+authors: [Baltimor]
+description: Territories, taxes, wars and alliances for RPG server.
+softdepend: [Vault]
+commands:
+  lands:
+    description: Lands commands
+    usage: /lands help
+  landsadmin:
+    description: Lands admin commands
+    usage: /landsadmin help
+permissions:
+  lands.admin:
+    description: Admin commands and protection bypass
+    default: op
+  lands.basic:
+    description: Basic lands commands
+    default: true
